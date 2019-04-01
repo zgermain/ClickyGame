@@ -1,48 +1,49 @@
 [{
   "id": "1",
-  "image": "../assets/images/Calvin.jpg"
+  "image": "./assets/images/Calvin.jpg"
 },
 {
   "id": "2",
-  "image": "../assets/images/CharlieBrown.jpg"
+  "image": "./assets/images/CharlieBrown.jpg"
 },
 {
   "id": "3",
-  "image": "../assets/images/Daffy Duck.jpg"
+  "image": "./assets/images/Daffy Duck.jpg"
 },
 {
   "id": "4",
-  "image": "../assets/images/Felix.jpg"
+  "image": "./assets/images/Felix.jpg"
 },
 {
   "id": "5",
-  "image": "../assets/images/Garfield.jpg"
+  "image": "./assets/images/Garfield.jpg"
 },
 {
   "id": "6",
-  "image": "../assets/images/LePew.jpg"
+  "image": "./assets/images/LePew.jpg"
 },
 {
   "id": "7",
-  "image": "../assets/images/Mickey.jpg"
+  "image": "./assets/images/Mickey.jpg"
 },
 {
   "id": "8",
-  "image": "../assets/images/Popeye.jpg"
-}, {
+  "image": "./assets/images/Popeye.jpg"
+}, 
+{
   "id": "9",
-  "image": "../assets/images/Rosie the Robot.jpg"
+  "image": "./assets/images/Rosie the Robot.jpg"
 },
 {
   "id": "10",
-  "image": "../assets/images/Shaggy.jpg"
+  "image": "./assets/images/Shaggy.jpg"
 },
 {
   "id": "11",
-  "image": "../assets/images/Slyvester.jpg"
+  "image": "./assets/images/Slyvester.jpg"
 },
 {
   "id": "12",
-  "image": "../assets/images/Snoopy.jpg"
+  "image": "./assets/images/Snoopy.jpg"
 }
 ]
