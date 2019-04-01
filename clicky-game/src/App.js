@@ -47,7 +47,7 @@ class App extends Component {
   };
 
   increaseScore = () => {
-    let score = this.state.score++;
+    let score = this.state.score + 1;
     console.log(`Current Score: ${score}`);
     if (score === this.state.Pics.length) {
       this.setState({
@@ -99,7 +99,11 @@ class App extends Component {
     return (
 
       <div>
-        <NavBar />
+        <NavBar 
+        score = {this.state.score}
+        topScore = {this.state.topScore}
+        announcement = {this.state.announcement}
+        />
         <Header />
         <div className="container">
           <div className="row">
