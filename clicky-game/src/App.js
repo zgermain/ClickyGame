@@ -44,7 +44,7 @@ class App extends Component {
     } else {
       this.newGame();
     }
-  }
+  };
 
   increaseScore = () => {
     let score = this.state.score++;
@@ -71,7 +71,7 @@ class App extends Component {
       });
     }
     this.resetPics();
-  }
+  };
 
   newGame = () => {
     this.setState({
@@ -85,11 +85,14 @@ class App extends Component {
     });
     console.log(`GameOver: ${this.state.gameOver}`);
     this.resetPics();
-  }
+  };
 
   resetPics = () => {
-
-  }
+    let randomArray = randomPic(Pics);
+    this.setState({
+      Pics: randomArray
+    })
+  };
 
   
   render() {
@@ -100,18 +103,15 @@ class App extends Component {
         <Header />
         <div className="container">
           <div className="row">
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
+
+          {this.state.Pics.map(pic => (
+            <Thumbnail 
+            id={pic.id}
+            image={pic.image}
+            clickAction={this.clickAction}
+            />
+          ))}
+               
           </div>
           {/* <image src="..\assets\images\Calvin.jpg" alt="calvin"></image> */}
         </div>
