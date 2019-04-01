@@ -7,7 +7,9 @@ import Pics from "./pics.json";
 
 
 
-
+const randomPic = (picArray) => {
+  
+}
 
 
 class App extends Component {
@@ -17,7 +19,24 @@ class App extends Component {
     topScore:0
   };
 
-  
+  clickAction = (id) => {
+
+  }
+
+  pointAction = () => {
+
+  }
+
+  newGame = () => {
+    this.setState({
+      score: 0,
+      topScore: this.state.topScore
+    })
+  }
+
+  resetPics = () => {
+
+  }
 
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
