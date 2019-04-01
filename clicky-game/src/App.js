@@ -76,8 +76,15 @@ class App extends Component {
   newGame = () => {
     this.setState({
       score: 0,
-      topScore: this.state.topScore
-    })
+      topScore: this.state.topScore,
+      Pics,
+      gameOver:true,
+      clickedImages: [],
+
+      announcement: "LOOOOSER!"
+    });
+    console.log(`GameOver: ${this.state.gameOver}`);
+    this.resetPics();
   }
 
   resetPics = () => {
