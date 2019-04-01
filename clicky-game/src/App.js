@@ -17,6 +17,7 @@ const randomPic = (picArray) => {
     picArray[guesses] = picArray[index];
     picArray[index] = temp;
   }
+  return picArray;
 }
 
 
@@ -26,15 +27,25 @@ class App extends Component {
     score:0,
     topScore:0,
     Pics,
-    clickedImages: []
+    clickedImages: [],
+    gameOver: false
     
   };
 
   clickAction = (id) => {
-
+    console.log(`Clicked ID: ${id}`);
+    if (!this.state.clickedImages.includes(id)){
+      this.increaseScore();
+      this.state.clickedImages.push(id);
+      this.setState({
+        gameOver: false
+      });
+    } else {
+      this.newGame();
+    }
   }
 
-  pointAction = () => {
+  increaseScore = () => {
 
   }
 
