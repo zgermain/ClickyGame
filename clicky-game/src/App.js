@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import Thumbnail from "./components/Thumbnail";
+import Pics from "./pics.json";
+
 
 
 
