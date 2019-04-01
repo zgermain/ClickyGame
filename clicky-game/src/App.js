@@ -60,6 +60,7 @@ class App extends Component {
             <Thumbnail />
             <Thumbnail />
           </div>
+          {/* <image src="..\assets\images\Calvin.jpg" alt="calvin"></image> */}
         </div>
       </div>
     );

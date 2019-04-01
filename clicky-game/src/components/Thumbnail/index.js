@@ -1,9 +1,9 @@
 import React from "react";
 
-function Thumbnail () {
+function Thumbnail (props) {
   return (
-    <div className="col-md-3">
-    <img src="https://via.placeholder.com/200x200?text=Test" className="img-thumbnail" alt="test"></img>
+    <div className="col-md-3" id={props.id} value={props.id} onClick={() => props.clickAction(props.id)}>
+    <img src={props.image} alt="bw-comic" className="img-thumbnail" ></img>
     </div>
   )
 };
