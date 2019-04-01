@@ -28,8 +28,9 @@ class App extends Component {
     topScore:0,
     Pics,
     clickedImages: [],
-    gameOver: false
+    gameOver: false,
     
+    announcement: ""
   };
 
   clickAction = (id) => {
@@ -46,7 +47,30 @@ class App extends Component {
   }
 
   increaseScore = () => {
-
+    let score = this.state.score++;
+    console.log(`Current Score: ${score}`);
+    if (score === this.state.Pics.length) {
+      this.setState({
+        announcement: "WINNER WINNER CHICKEN DINNER!",
+        topScore: score,
+        score: 0,
+        clickedImages: [],
+        Pics,
+        gameOver: false
+      });
+    } else if (score > this.state.topScore) {
+      this.setState({
+        topScore: score,
+        score: score,
+        announcement: "HIGH SCORE"
+      })
+    } else {
+      this.setState ({
+        score: score,
+        announcement: "YOU GOT IT!"
+      });
+    }
+    this.resetPics();
   }
 
   newGame = () => {
